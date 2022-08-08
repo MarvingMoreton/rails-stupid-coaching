@@ -1,0 +1,23 @@
+<div class="container">
+<H1>Stupid Coaching</H1>
+<%# should display question & answer of the coach %>
+
+<div class="box">
+<p class="question"><%= @message %></p>
+<p class="italic"> - Your coach</p>
+
+</div>
+
+
+<div class="box">
+<div class="answer" >
+<p class="bold">
+<%= @real_answer %>
+</p>
+<p class="italic"> - You</p>
+</div>
+</div>
+
+
+<%= link_to "Ask a new question", ask_path %>
+</div>
